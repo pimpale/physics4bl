@@ -30,7 +30,7 @@ class AnalogPlot:
     saveStatus = False
     saveSwitch = True
     pressIdx = 0
-    sampleInput = serial.Serial("COM8", 115200, timeout = 5) 
+    sampleInput = serial.Serial("/dev/ttyACM0", 115200, timeout = 5) 
     parentFileName = "my_data_"
     
     buffSize = 512
